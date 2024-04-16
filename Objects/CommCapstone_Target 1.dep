@@ -1,0 +1,31 @@
+Dependencies for Project 'CommCapstone', Target 'Target 1': (DO NOT MODIFY !)
+F (.\PLL.c)(0x651A3A5A)(-c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections-I "C:\Users\lmorris6152\OneDrive - Holland College\CommCapstone\RTE"-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DTM4C123GH6PM-o .\objects\pll.o --omf_browse .\objects\pll.crf --depend .\objects\pll.d)
+I (PLL.h)(0x651A3A5A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54769BC0)
+I (tm4c123gh6pm.h)(0x651A3A5C)
+F (.\ST7735.c)(0x65F06E8C)(-c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections-I "C:\Users\lmorris6152\OneDrive - Holland College\CommCapstone\RTE"-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DTM4C123GH6PM-o .\objects\st7735.o --omf_browse .\objects\st7735.crf --depend .\objects\st7735.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54769BC0)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54769BC0)
+I (ST7735.h)(0x54067856)
+I (tm4c123gh6pm.h)(0x651A3A5C)
+F (.\SysTick.c)(0x651A3A5B)(-c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections-I "C:\Users\lmorris6152\OneDrive - Holland College\CommCapstone\RTE"-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DTM4C123GH6PM-o .\objects\systick.o --omf_browse .\objects\systick.crf --depend .\objects\systick.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54769BC0)
+I (tm4c123gh6pm.h)(0x651A3A5C)
+F (.\startup.s)(0x651A3A5A)(--cpu Cortex-M4.fp --pd "__EVAL SETA 1" -g --apcs=interwork -I "C:\Users\lmorris6152\OneDrive - Holland College\CommCapstone\RTE"-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0-I C:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 514" --pd "TM4C123GH6PM SETA 1"--list .\listings\startup.lst --xref -o .\objects\startup.o --depend .\objects\startup.d)
+F (.\CommMain.c)(0x661EA6F1)(-c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections-I "C:\Users\lmorris6152\OneDrive - Holland College\CommCapstone\RTE"-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DTM4C123GH6PM-o .\objects\commmain.o --omf_browse .\objects\commmain.crf --depend .\objects\commmain.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54769BC0)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54769BC0)
+I (PLL.h)(0x651A3A5A)
+I (SysTick.h)(0x651A3A5B)
+I (ST7735.h)(0x54067856)
+I (tm4c123gh6pm.h)(0x651A3A5C)
+I (BluetoothLib.h)(0x660FF529)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x54769BBE)
+I (RadioLib.h)(0x661EA997)
+I (UART_MACROS.h)(0x660FF3F4)
+F (.\BluetoothLib.c)(0x660FFF7B)(-c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections-I "C:\Users\lmorris6152\OneDrive - Holland College\CommCapstone\RTE"-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DTM4C123GH6PM-o .\objects\bluetoothlib.o --omf_browse .\objects\bluetoothlib.crf --depend .\objects\bluetoothlib.d)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x54769BBE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54769BC0)
+I (tm4c123gh6pm.h)(0x651A3A5C)
+I (BluetoothLib.h)(0x660FF529)
+I (UART_MACROS.h)(0x660FF3F4)

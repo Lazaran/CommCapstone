@@ -1,0 +1,11 @@
+.\objects\commmain.o: CommMain.c
+.\objects\commmain.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\commmain.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\commmain.o: PLL.h
+.\objects\commmain.o: SysTick.h
+.\objects\commmain.o: ST7735.h
+.\objects\commmain.o: tm4c123gh6pm.h
+.\objects\commmain.o: BluetoothLib.h
+.\objects\commmain.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\commmain.o: RadioLib.h
+.\objects\commmain.o: UART_MACROS.h
