@@ -4,6 +4,10 @@
         "bluetoothlib.h": "c",
         "math.h": "c",
         "radiolib.h": "c",
-        "stdint.h": "c"
+        "stdint.h": "c",
+        "protocol_macros.h": "c",
+        "pf_led_btns.h": "c",
+        "ledbtns.h": "c",
+        "commprotocol.h": "c"
     }
 }

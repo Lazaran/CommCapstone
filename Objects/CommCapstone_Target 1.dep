@@ -1,31 +1,64 @@
 Dependencies for Project 'CommCapstone', Target 'Target 1': (DO NOT MODIFY !)
-F (.\PLL.c)(0x651A3A5A)(-c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections-I "C:\Users\lmorris6152\OneDrive - Holland College\CommCapstone\RTE"-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DTM4C123GH6PM-o .\objects\pll.o --omf_browse .\objects\pll.crf --depend .\objects\pll.d)
+CompilerVersion: 6190000::V6.19::ARMCLANG
+F (.\PLL.c)(0x651A3A5A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-IC:/Keil_v5/ARM/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="538" -DTM4C123GH6PM-o ./objects/pll.o -MD)
 I (PLL.h)(0x651A3A5A)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54769BC0)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6388E3B8)
 I (tm4c123gh6pm.h)(0x651A3A5C)
-F (.\ST7735.c)(0x65F06E8C)(-c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections-I "C:\Users\lmorris6152\OneDrive - Holland College\CommCapstone\RTE"-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DTM4C123GH6PM-o .\objects\st7735.o --omf_browse .\objects\st7735.crf --depend .\objects\st7735.d)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54769BC0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54769BC0)
+F (.\ST7735.c)(0x65F06E8C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-IC:/Keil_v5/ARM/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="538" -DTM4C123GH6PM-o ./objects/st7735.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x6388E3B8)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6388E3B8)
 I (ST7735.h)(0x54067856)
 I (tm4c123gh6pm.h)(0x651A3A5C)
-F (.\SysTick.c)(0x651A3A5B)(-c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections-I "C:\Users\lmorris6152\OneDrive - Holland College\CommCapstone\RTE"-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DTM4C123GH6PM-o .\objects\systick.o --omf_browse .\objects\systick.crf --depend .\objects\systick.d)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54769BC0)
+F (.\SysTick.c)(0x651A3A5B)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-IC:/Keil_v5/ARM/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="538" -DTM4C123GH6PM-o ./objects/systick.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6388E3B8)
 I (tm4c123gh6pm.h)(0x651A3A5C)
-F (.\startup.s)(0x651A3A5A)(--cpu Cortex-M4.fp --pd "__EVAL SETA 1" -g --apcs=interwork -I "C:\Users\lmorris6152\OneDrive - Holland College\CommCapstone\RTE"-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0-I C:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 514" --pd "TM4C123GH6PM SETA 1"--list .\listings\startup.lst --xref -o .\objects\startup.o --depend .\objects\startup.d)
-F (.\CommMain.c)(0x661EA6F1)(-c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections-I "C:\Users\lmorris6152\OneDrive - Holland College\CommCapstone\RTE"-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DTM4C123GH6PM-o .\objects\commmain.o --omf_browse .\objects\commmain.crf --depend .\objects\commmain.d)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54769BC0)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54769BC0)
+F (.\startup.s)(0x651A3A5A)(--target=armv7em-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -masm=auto  -Wa,armasm,--diag_suppress=A1950W -c-gdwarf-4-IC:/Keil_v5/ARM/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-IC:/Keil_v5/ARM/CMSIS/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 538" -Wa,armasm,--pd,"TM4C123GH6PM SETA 1"-o ./objects/startup.o)
+F (.\BluetoothLib.c)(0x66218526)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-IC:/Keil_v5/ARM/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="538" -DTM4C123GH6PM-o ./objects/bluetoothlib.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\math.h)(0x6388E3B8)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6388E3B8)
+I (tm4c123gh6pm.h)(0x651A3A5C)
+I (BluetoothLib.h)(0x66215C78)
+I (CommProtocol.h)(0x66217A7C)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x6388E3B8)
+F (.\LEDBTNS.c)(0x66215B0B)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-IC:/Keil_v5/ARM/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="538" -DTM4C123GH6PM-o ./objects/ledbtns.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x6388E3B8)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6388E3B8)
+I (tm4c123gh6pm.h)(0x651A3A5C)
+I (LEDBTNS.h)(0x6621590C)
+I (CommProtocol.h)(0x66217A7C)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x6388E3B8)
+F (.\RadioLib.c)(0x66218518)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-IC:/Keil_v5/ARM/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="538" -DTM4C123GH6PM-o ./objects/radiolib.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6388E3B8)
+I (C:\Keil_v5\ARM\ARMCLANG\include\math.h)(0x6388E3B8)
+I (tm4c123gh6pm.h)(0x651A3A5C)
+I (RadioLib.h)(0x66215C4C)
+I (CommProtocol.h)(0x66217A7C)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x6388E3B8)
+F (.\main.c)(0x66218858)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-IC:/Keil_v5/ARM/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="538" -DTM4C123GH6PM-o ./objects/main.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x6388E3B8)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6388E3B8)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x6388E3B8)
 I (PLL.h)(0x651A3A5A)
 I (SysTick.h)(0x651A3A5B)
 I (ST7735.h)(0x54067856)
 I (tm4c123gh6pm.h)(0x651A3A5C)
-I (BluetoothLib.h)(0x660FF529)
-I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x54769BBE)
-I (RadioLib.h)(0x661EA997)
-I (UART_MACROS.h)(0x660FF3F4)
-F (.\BluetoothLib.c)(0x660FFF7B)(-c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections-I "C:\Users\lmorris6152\OneDrive - Holland College\CommCapstone\RTE"-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DTM4C123GH6PM-o .\objects\bluetoothlib.o --omf_browse .\objects\bluetoothlib.crf --depend .\objects\bluetoothlib.d)
-I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x54769BBE)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54769BC0)
+I (BluetoothLib.h)(0x66215C78)
+I (C:\Keil_v5\ARM\ARMCLANG\include\math.h)(0x6388E3B8)
+I (RadioLib.h)(0x66215C4C)
+I (LEDBTNS.h)(0x6621590C)
+I (CommProtocol.h)(0x66217A7C)
+F (.\CommProtocol.c)(0x66217FD9)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=none -mfloat-abi=soft -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-IC:/Keil_v5/ARM/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="538" -DTM4C123GH6PM-o ./objects/commprotocol.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6388E3B8)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x6388E3B8)
+I (LEDBTNS.h)(0x6621590C)
+I (RadioLib.h)(0x66215C4C)
+I (C:\Keil_v5\ARM\ARMCLANG\include\math.h)(0x6388E3B8)
 I (tm4c123gh6pm.h)(0x651A3A5C)
-I (BluetoothLib.h)(0x660FF529)
-I (UART_MACROS.h)(0x660FF3F4)
+I (BluetoothLib.h)(0x66215C78)
+I (CommProtocol.h)(0x66217A7C)
+I (C:\Keil_v5\ARM\Pack\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\tm4c123gh6pm.h)(0x6514B9E4)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cm4.h)(0x6514B83B)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x6514B83C)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x6514B83B)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cm4_simd.h)(0x6514B83B)
+I (C:\Keil_v5\ARM\Pack\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\system_TM4C123.h)(0x6514B9E3)
