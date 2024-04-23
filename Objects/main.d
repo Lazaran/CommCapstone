@@ -1,6 +1,13 @@
-./objects/main.o: main.c C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdbool.h PLL.h SysTick.h \
-  ST7735.h tm4c123gh6pm.h BluetoothLib.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\math.h RadioLib.h LEDBTNS.h \
-  CommProtocol.h
+.\objects\main.o: main.c
+.\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\main.o: PLL.h
+.\objects\main.o: SysTick.h
+.\objects\main.o: ST7735.h
+.\objects\main.o: tm4c123gh6pm.h
+.\objects\main.o: BluetoothLib.h
+.\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\main.o: RadioLib.h
+.\objects\main.o: LEDBTNS.h
+.\objects\main.o: CommProtocol.h

@@ -1,5 +1,7 @@
-./objects/ledbtns.o: LEDBTNS.c \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h tm4c123gh6pm.h \
-  LEDBTNS.h CommProtocol.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdbool.h
+.\objects\ledbtns.o: LEDBTNS.c
+.\objects\ledbtns.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\ledbtns.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\ledbtns.o: tm4c123gh6pm.h
+.\objects\ledbtns.o: LEDBTNS.h
+.\objects\ledbtns.o: CommProtocol.h
+.\objects\ledbtns.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h

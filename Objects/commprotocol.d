@@ -1,11 +1,9 @@
-./objects/commprotocol.o: CommProtocol.c \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdbool.h LEDBTNS.h RadioLib.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\math.h tm4c123gh6pm.h \
-  BluetoothLib.h CommProtocol.h \
-  C:\Keil_v5\ARM\Pack\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\tm4c123gh6pm.h \
-  C:\Keil_v5\ARM\CMSIS\Include\core_cm4.h \
-  C:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h \
-  C:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h \
-  C:\Keil_v5\ARM\CMSIS\Include\core_cm4_simd.h \
-  C:\Keil_v5\ARM\Pack\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\system_TM4C123.h
+.\objects\commprotocol.o: CommProtocol.c
+.\objects\commprotocol.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\commprotocol.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\commprotocol.o: LEDBTNS.h
+.\objects\commprotocol.o: RadioLib.h
+.\objects\commprotocol.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\commprotocol.o: tm4c123gh6pm.h
+.\objects\commprotocol.o: BluetoothLib.h
+.\objects\commprotocol.o: CommProtocol.h

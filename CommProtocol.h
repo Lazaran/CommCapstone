@@ -38,8 +38,8 @@
 #define RW_RANGE 0x80
 #define MSG_RANGE 0x60
 #define ADDR_RANGE 0x1F
-#define RW_READ 0x00
-#define RW_WRITE 0x80
+#define RW_READ 0x80
+#define RW_WRITE 0x00
 #define MSG_ON 0x20
 #define MSG_OFF 0x40
 #define MSG_FLASH 0x60

@@ -9,7 +9,7 @@
 #include "RadioLib.h"
 #include "BluetoothLib.h"
 #include "CommProtocol.h"
-#include <tm4c123gh6pm.h>
+#include "tm4c123gh6pm.h"
 
 /*!*******************************************************************
     @brief Check: Is the received message a duplicate of the previous message

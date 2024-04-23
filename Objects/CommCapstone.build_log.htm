@@ -3,58 +3,64 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Tool Versions:</h2>
-IDE-Version: µVision V5.38.0.0
-Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: Qwyn Scurr
-Holland College
-User-based license: Keil MDK Community (non-commercial free of charge)
-Valid until: May 31 2033. Cached until: Apr 25 2024
+IDE-Version: µVision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: James Vardy, Holland College, LIC=----
  
 Tool Versions:
-Toolchain:       Keil MDK Community (non-commercial free of charge  Version: 5.38.0.0
-Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
-C Compiler:      ArmClang.exe V6.19
-Assembler:       Armasm.exe V6.19
-Linker/Locator:  ArmLink.exe V6.19
-Library Manager: ArmAr.exe V6.19
-Hex Converter:   FromElf.exe V6.19
-CPU DLL:         SARMCM3.DLL V5.38.0.0
-Dialog DLL:      DCM.DLL V1.17.5.0
+Toolchain:       MDK-Lite  Version: 5.14.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DCM.DLL V1.13.1.0
 Target DLL:      lmidk-agdi.dll V???
-Dialog DLL:      TCM.DLL V1.56.4.0
+Dialog DLL:      TCM.DLL V1.14.4.0
  
 <h2>Project:</h2>
-C:\Users\Qwyn\OneDrive - Holland College\Year2 Semester2\E2440\Capstone\CommCapstone\CommCapstone.uvprojx
-Project File Date:  04/18/2024
+C:\Users\qscurr\OneDrive - Holland College\Year2 Semester2\E2440\Capstone\CommCapstone\CommCapstone.uvprojx
+Project File Date:  04/21/2024
 
 <h2>Output:</h2>
-*** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
 Rebuild target 'Target 1'
-compiling RadioLib.c...
-compiling CommProtocol.c...
 compiling PLL.c...
-assembling startup.s...
-compiling SysTick.c...
-compiling BluetoothLib.c...
-compiling LEDBTNS.c...
-compiling main.c...
 compiling ST7735.c...
+compiling SysTick.c...
+assembling startup.s...
+compiling BluetoothLib.c...
+CommProtocol.h(116): warning:  #1-D: last line of file ends without a newline
+  #endif
+BluetoothLib.c: 1 warning, 0 errors
+compiling LEDBTNS.c...
+CommProtocol.h(116): warning:  #1-D: last line of file ends without a newline
+  #endif
+LEDBTNS.c(110): warning:  #1-D: last line of file ends without a newline
+  };
+LEDBTNS.c: 2 warnings, 0 errors
+compiling RadioLib.c...
+CommProtocol.h(116): warning:  #1-D: last line of file ends without a newline
+  #endif
+RadioLib.c: 1 warning, 0 errors
+compiling main.c...
+CommProtocol.h(116): warning:  #1-D: last line of file ends without a newline
+  #endif
+main.c: 1 warning, 0 errors
+compiling CommProtocol.c...
+CommProtocol.h(116): warning:  #1-D: last line of file ends without a newline
+  #endif
+CommProtocol.c: 1 warning, 0 errors
 linking...
-Program Size: Code=5676 RO-data=16 RW-data=0 ZI-data=1136  
-".\Objects\CommCapstone.axf" - 0 Error(s), 0 Warning(s).
-
-<h2>Software Packages used:</h2>
-
-Package Vendor: Keil
-                http://www.keil.com/pack/Keil.TM4C_DFP.1.1.0.pack
-                Keil.TM4C_DFP.1.1.0
-                Texas Instruments Tiva C Series Device Support and Examples
+Program Size: Code=5092 RO-data=32 RW-data=12 ZI-data=1124  
+".\Objects\CommCapstone.axf" - 0 Error(s), 6 Warning(s).
 
 <h2>Collection of Component include folders:</h2>
-  C:/Keil_v5/ARM/Pack/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123
+  C:\Users\qscurr\OneDrive - Holland College\Year2 Semester2\E2440\Capstone\CommCapstone\RTE
+  C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>

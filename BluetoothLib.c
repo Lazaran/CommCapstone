@@ -39,15 +39,14 @@ void Bluetooth_Init(uint32_t baud, uint16_t word, uint16_t stop, uint16_t parity
     UART5_CTL_R &= 0xFFFE;              // Control | Disabling UART
     UART5_IBRD_R = BT_IBRDVal;          // Integer Baud-Rate Divisor
     UART5_FBRD_R = BT_FBRDVal;          // Fractional Baud-Rate Divisor
-    UART5_LCRH_R = 0x00;                // Line Control | Parity Enable + FIFO Enable
-    UART5_LCRH_R = 0x10 | word | stop | parity | parity_toggle;		// Line Control | FIFO Enable
+    UART5_LCRH_R = 0x00 | word | stop | parity | parity_toggle;		// Line Control | FIFO Enable
     UART5_CC_R = 0x00;                  // Clock Configuration | System Clock
     UART5_IFLS_R = 0x00;                // FIFO Level Trigger | RX >= 1/8 | TX <= 7/8
 
     // Enabling Interrupt
     UART5_IM_R = 0x0000;                // Clear Interrupt Mask
+    UART5_IM_R = 0x0010;                // Set Interrupt Mask | RX
     UART5_ICR_R = 0xFFFF;               // Clear Interrupt Registers
-    // UART5_IM_R = 0x0010;                // Set Interrupt Mask | RX
     NVIC_EN1_R = 0x20000000;            // Enabling Interrupt for UART 5 | Vector 61
     NVIC_PRI15_R = 0x8000;              // Setting UART 5 Interrupt Priority to 4
 

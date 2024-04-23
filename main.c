@@ -24,8 +24,12 @@ volatile uint32_t Now_Msg = 0;
 volatile uint32_t Old_Msg = 0;
 volatile bool EmergencyModeFlag = false;
 
-void EnableInterrupts(void);
 void WaitForInterrupt(void);
+
+void CoprocessorInit(void){
+    NVIC_CPAC_R = 0x00F00000;
+    NVIC_FPDSC_R = 0x00;
+};
 
 /*!*******************************************************************
     @brief Prints the input number and text to the LCD at the positions defined
@@ -49,18 +53,18 @@ void format_Print(int16_t x, int16_t y, int num, char* text){
 **********************************************************************/
 int main(){
     // Initializations
+    // CoprocessorInit();
     PLL_Init();
-		SysTick_Init();
+    SysTick_Init();
     //ST7735_InitR(INITR_REDTAB);
     LEDBTNS_Init();
     FlashTimer_Init();
-    Radio_Init(BAUD_9600,WORD_8BIT,STOP_1BIT,PARITY_ODD,PARITY_ENABLE);
+    Radio_Init(BAUD_9600,WORD_8BIT,STOP_1BIT,PARITY_EVEN,PARITY_DISABLE);
     Bluetooth_Init(BAUD_115200,WORD_8BIT,STOP_1BIT,PARITY_EVEN,PARITY_DISABLE);
-    EnableInterrupts();
 
     //ST7735_DrawString(0,0,"< Hello",ST7735_WHITE);
     while(1){
-				SysTick_Wait10ms(100);
+        WaitForInterrupt();
         // Wait for system to receive from radio/bluetooth or manually transmit from buttons
         //WaitForInterrupt();
 

@@ -37,17 +37,16 @@ void Radio_Init(uint32_t baud, uint16_t word, uint16_t stop, uint16_t parity, ui
 	
     // Activating and configuring UART1
 	UART1_CTL_R &= 0xFFFE;          // Control | Disabling UART
-	UART1_IBRD_R = RAD_IBRDVal;         // Integer Baud-Rate Divisor
-	UART1_FBRD_R = RAD_FBRDVal;         // Fractional Baud-Rate Divisor
-	UART1_LCRH_R = 0x00;            // Line Control | Parity Enable + FIFO Enable
-	UART1_LCRH_R = 0x10 | word | stop | parity | parity_toggle;     // Line Control | FIFO Enable
+	UART1_IBRD_R = RAD_IBRDVal;     // Integer Baud-Rate Divisor
+	UART1_FBRD_R = RAD_FBRDVal;     // Fractional Baud-Rate Divisor
+	UART1_LCRH_R = 0x00 | word | stop | parity | parity_toggle;     // Line Control | FIFO Enable
 	UART1_CC_R = 0x00;              // Clock Configuration | System Clock
 	UART1_IFLS_R = 0x00;            // FIFO Level Trigger | RX >= 1/8 | TX <= 7/8
 
     // Enabling Interrupt
     UART1_IM_R = 0x0000;            // Clear Interrupt Mask
+	UART1_IM_R = 0x0010;            // Set Interrupt Mask | RX
 	UART1_ICR_R = 0xFFFF;           // Clear Interrupt Registers
-	// UART1_IM_R = 0x0010;            // Set Interrupt Mask | RX
 	NVIC_EN0_R = 0x40;              // Enabling Interrupt for UART 1 | Vector 6
 	NVIC_PRI1_R = 0x600000;         // Setting UART 1 Interrupt Priority to 3
     
@@ -87,7 +86,8 @@ void Radio_Tx(uint32_t data){
     // If FIFO disabled
     else {
         // Write data to TX register
-        UART1_DR_R = data & 0xFF;
+        // UART1_DR_R = data;
+        UART1_DR_R = data;
         // Wait for TX to stop transmitting
         while((UART1_FR_R & UART_FR_TXFE) == 0){};
     }

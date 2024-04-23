@@ -10,6 +10,7 @@
 **********************************************************************/
 void LEDBTNS_Init(void){
     SYSCTL_RCGCGPIO_R |= SYSCTL_RCGCGPIO_R5;    // Enable Port F Clock
+    
     GPIO_PORTF_LOCK_R = 0x4C4F434B;     // Lock for Port F
     GPIO_PORTF_CR_R = 0x1F;             // PF[0:4] Commit Write On
     GPIO_PORTF_AMSEL_R = 0x00;          // PF[0:7] Analog Mode Disable
@@ -20,6 +21,8 @@ void LEDBTNS_Init(void){
     GPIO_PORTF_DEN_R = 0x1F;            // PF[0:4] Digital Enable
 
     // Interrupt Enable
+    GPIO_PORTF_IM_R = 0x00;             // Mask Interrupts
+    GPIO_PORTF_IM_R = 0x11;             // PF[0&4] Unmask Interrupts
     GPIO_PORTF_IS_R = 0x00;             // PF[0:4] Edge Trigger Interrupt 
     GPIO_PORTF_IEV_R = 0x00;            // PF[0] Trigger Falling Edge | WHATEVER MAKES BUTTON DOWNPRESS WORK
     GPIO_PORTF_ICR_R = 0xFF;            // PF[0:7] Clear Interrupt Register
@@ -40,6 +43,8 @@ void FlashTimer_Init(void){
     TIMER0_TAILR_R = 0x02625A00;    // Interval Load: Load value: 40,000,000
 
     // Interrupt Enable
+    TIMER0_IMR_R = 0x00;            // Mask Interrupts            
+    TIMER0_IMR_R = 0x01;            // Unmask Timer 0A Time-out Interrupt
     TIMER0_ICR_R = 0xFFFFF;         // Clear Interrupt Register
     NVIC_EN0_R = 0x00080000;        // Enabling Interrupt for Timer 0A | Vector 19
     NVIC_PRI4_R = 0xA0000000;       // Setting Timer 0A Interrupt Priority to 5

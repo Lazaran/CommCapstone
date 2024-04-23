@@ -1,4 +1,4 @@
---cpu=Cortex-M4 --fpu=SoftVFP
+--cpu Cortex-M4
 ".\objects\pll.o"
 ".\objects\st7735.o"
 ".\objects\systick.o"
@@ -8,6 +8,6 @@
 ".\objects\radiolib.o"
 ".\objects\main.o"
 ".\objects\commprotocol.o"
---ro-base 0x00000000 --entry 0x00000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--ro-base 0x00000000 --entry 0x00000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list ".\Listings\CommCapstone.map" -o .\Objects\CommCapstone.axf
